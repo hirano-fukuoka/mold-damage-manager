@@ -1,5 +1,9 @@
 import sqlite3
 import pandas as pd
+import os
+
+# ディレクトリを事前に作成
+os.makedirs("data", exist_ok=True)
 
 def init_db():
     conn = sqlite3.connect("data/mold_data.db")
